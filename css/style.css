@@ -1,77 +1,56 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;900&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 .container{
     width: 95%;
     margin: auto;
 }
-/* h1 {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: black;
-  padding: 0;
-  margin: 0;
-} */
-h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 70px;
-  letter-spacing: 10px;
+.container nav{
+  width: 100%;
+  height: 350px;
+  display: flex;
   text-align: center;
-  color: white;
-  font-weight: 400;
-  text-transform: uppercase;
-  z-index: 10;
-  opacity: 0.9;
+  justify-content: space-around;
+  flex-direction: column;
 }
-/* h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 0;
-  font-weight: 400;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  color: black;
-} */
-p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+.links{
+  align-self: center;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.title {
-  background: white;
-  padding: 60px;
-  margin: 0 auto;
-  text-align: center;
+.links li{
+  list-style: none;
 }
-.title h1 {
-  font-size: 35px;
-  letter-spacing: 8px;
+.links li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 17px;
+  color:black;
+  letter-spacing: 1.5px;
 }
-
-.block {
-  background: white;
+.between {
   padding: 60px;
   width: 820px;
   margin: 0 auto;
   text-align: justify;
 }
-.block-gray {
-  background: #f2f2f2;
-  padding: 60px;
+p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
 }
 .view{
   overflow: hidden;
   width: 100%;
-  height: 400px;
+  height: 600px;
   display: grid;
   place-content: center;
   background-attachment: fixed;
@@ -79,53 +58,22 @@ p {
   background-repeat: no-repeat;
   background-position: top center;
 }
-.parallax-one {
-  background-image: url(https://images.unsplash.com/photo-1415018255745-0ec3f7aee47b?dpr=1&auto=format&fit=crop&w=1500&h=938&q=80&cs=tinysrgb&crop=);
+.section_one {
+  background-image: url('../images/img_three.jpg');
 }
-.parallax-two {
-  background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+.section_two {
+  background-image: url('../images/img_one.jpg');
 }
-.parallax-three {
-  background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);
+.section_three {
+  background-image: url('../images/img_two.jpg');
 }
-
-/* Extras */
-/**************************/
-.line-break {
-  border-bottom: 1px solid black;
-  width: 150px;
-  margin: 0 auto;
-}
-
-/* Media Queries */
-/**************************/
-@media screen and (max-width: 959px) and (min-width: 768px) {
-  .block {
-    padding: 40px;
-    width: 620px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .block {
-    padding: 30px;
-    width: 420px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  .block {
-    padding: 30px;
-  }
-  .parallax-one,
-  .parallax-two,
-  .parallax-three {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .block {
-    padding: 30px 15px;
-    width: 290px;
-  }
+h2 {
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 6em;
+  text-transform: uppercase;
+  opacity: 0.7;
 }
