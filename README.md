@@ -1,2 +1,1 @@
-# -parallax-home-page
-parallax home page
+![parallax home page](images/parallax.jpg)
